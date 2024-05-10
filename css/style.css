@@ -58,7 +58,7 @@ li {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: no-repeat url(images/body_bg.png) 0 0;
+    background: no-repeat url(./images/body_bg.png) 0 0;
     background-size: cover;
     z-index: -1;
     mix-blend-mode: overlay;
