@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+input,
+textarea {
+    font-size: 100%;
+    vertical-align: middle;
+}
+body,
+div,
+p,
+address,
+dl,
+dt,
+dd,
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #eff0f0;
+    color: #000;
+    font-family: 'Chillax', 'YakuHanJP', 'dnp-shuei-gothic-gin-std', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-feature-settings: 'palt';
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    transition: 0.6s ease;
+}
+body.-is-view-service {
+    background-color: rgba(23, 23, 23, 0.88);
+}
+img{
+    display: inline-block;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+li {
+    list-style: none;
+}
+
+
+@import
+url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.snip {
+    position: relative;
+    display: inline-block;
+    margin: 1.25rem;
+    max-width: 190px;
+    width: 100%;
+    color: #bbb;
+    font-size: 1.6rem;
+    box-shadow: none !important;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.snip *,
+.snip:before,
+.snip:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.snip:before,
+.snip:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    border: 2px solid #bbb;
+    border-color: transparent #bbb;
+}
+
+.snip img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.snip figcaption {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 50%;
+}
+
+.snip i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    z-index: 1;
+}
+
+.snip a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip:hover figcaption,
+.snip.hover figcaption {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.snip:hover:before,
+.snip.hover:before,
+.snip:hover:after,
+.snip.hover:after {
+    border-width: 10px;
+}
+
+.snip:hover:before,
+.snip.hover:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.snip:hover:after,
+.snip.hover:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}

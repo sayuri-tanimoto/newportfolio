@@ -1,0 +1,307 @@
+@charset "UTF-8";
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #eff0f0;
+    color: #000;
+    font-family: 'Chillax', 'YakuHanJP', 'dnp-shuei-gothic-gin-std', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    font-feature-settings: 'palt';
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    transition: 0.6s ease;
+}
+
+body.-is-view-service {
+    background-color: rgba(23, 23, 23, 0.88);
+}
+
+img{
+    display: inline-block;
+    border: none;
+    max-width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    text-decoration: none;
+}
+
+/* fixedBackGroundImage
+*************/
+
+
+
+/* loading
+*************/
+.loader{
+    position: absolute;
+    top: 50%;
+    margin: -240px;
+    left: 50%;
+    width: 480px;
+    height: 480px;
+    pointer-events: none; /* 背後のコンテンツにマウスイベントが影響しないようにする */
+}
+.loader h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    font-size: 2.4rem;
+    color: rgba(0,0,0,0.24);
+    font-weight: 400;
+}
+
+/* ローディング画面が表示されている間、ページを非表示にする */
+body.loading {
+    overflow: hidden;
+}
+
+
+
+/* header
+*************/
+.header {
+    position: fixed;
+    top: 0px;
+    max-height: 70px;
+    z-index: 999;
+    width: 100%;
+    padding-top: 17px;
+    background: none;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+    top: -100px;
+    padding-bottom: 6px;
+}
+@media only screen and (max-width: 766px) {
+    .header {
+        padding-top: 25px;
+    }
+}
+
+.open-nav {
+    max-height: 400px !important;
+}
+.open-nav .sp-btn {
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.sticky {
+    background-color: rgba(239, 240, 240, 0.93);
+    opacity: 1;
+    top: 0px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.logo {
+    width: 50px;
+    font-size: 25px;
+    color: #000;
+    text-transform: uppercase;
+    float: left;
+    display: block;
+    margin-top: 0;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 766px) {
+    .logo {
+        float: none;
+    }
+}
+
+nav {
+    float: right;
+    width: 60%;
+}
+@media only screen and (max-width: 766px) {
+    nav {
+        width: 100%;
+    }
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: right;
+    float: right;
+}
+@media only screen and (max-width: 766px) {
+    nav ul {
+        padding-top: 10px;
+        margin-bottom: 22px;
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 35px;
+    line-height: 1.5;
+}
+@media only screen and (max-width: 766px) {
+    nav ul li {
+        width: 100%;
+        padding: 7px 0;
+        margin: 0;
+    }
+}
+
+nav ul a {
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.sp-btn {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 22px;
+    top: 0;
+    width: 30px;
+    -webkit-transition: all 200ms ease-in;
+    -moz-transition: all 200ms ease-in;
+    transition: all 200ms ease-in;
+}
+@media only screen and (max-width: 766px) {
+    .sp-btn {
+        display: block;
+    }
+}
+
+.sp-btn span {
+    width: 30px;
+    height: 4px;
+    margin-bottom: 6px;
+    border-radius: 1000px;
+    background: #8f8f8f;
+    display: block;
+}
+
+.row {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 2%;
+}
+
+
+/* mv
+*************/
+.mv {
+    height: 110vh;
+}
+
+
+/* about
+*************/
+
+
+
+/* works
+*************/
+.slick-slide img {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.slider {
+    width: 70%;
+    margin: 7.5rem auto;
+}
+
+.slick-slide {
+    transform: scale(0.8);
+    opacity: 0.3;
+    transition: all 0.5s;
+}
+
+.slick-center {
+    transform: 1;
+    opacity: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    color: #000 !important;
+}
+
+/* contact
+*************/
+.btn {
+    display: inline-block;
+    position: relative;
+    background: #eff0f0;
+    color: #000;
+    padding: 1.5rem 2.5rem 1.5rem 6rem;
+    transition: all 0.3s;
+}
+.btn:before, .btn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+}
+.btn:before {
+    width: 0.6rem;
+    height: 0.6rem;
+    left: 2rem;
+    border-top: solid 2px #fff;
+    border-right: solid 2px #fff;
+    z-index: 2;
+    transform: translateY(-50%) rotate(45deg);
+    transition: all 0.3s;
+}
+.btn:after {
+    left: 0;
+    background: #000;
+    z-index: 1;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 4rem;
+    transform: translateY(-50%);
+    transition: all 0.5s;
+}
+.btn span {
+    position: relative;
+    transition: all 0.3s;
+    z-index: 3;
+}
+.btn:hover {
+    padding: 1.5rem 2.5rem 1.5rem 4.5rem;
+}
+.btn:hover span {
+    color: #eff0f0;
+}
+.btn:hover:before {
+    left: 2.5rem;
+}
+.btn:hover:after {
+    right: 0;
+    width: 100%;
+}

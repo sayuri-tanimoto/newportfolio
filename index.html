@@ -11,7 +11,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=chillax@200,300,400,500,600,700&display=swap">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <!-- slickのCSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
+        <link rel="stylesheet" href="css/main-style.css">
+        <!-- js -->
+        <script src="https://kit.fontawesome.com/92d27a79ca.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -22,29 +27,88 @@
         </div>
         <!-- ヘッダー -->
         <header class="header">
-            <nav class="header_nav">
-                <ul class="headerNav">
-                    <li class="headerNav_items"><a href="#about"></a>about</li>
-                    <li class="headerNav_items"><a href="#service"></a>service</li>
-                    <li class="headerNav_items"><a href="#works"></a>works</li>
-                    <li class="headerNav_items"><a href="#conract"></a>contact</li>
-                </ul>
-            </nav>
+            <div class="row">
+                <a href="" class="logo"></a>
+                <div class="sp-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#about"></a>about</li>
+                        <li><a href="#service"></a>service</li>
+                        <li><a href="#works"></a>works</li>
+                        <li><a href="mailto:tsl56.free@gmail.com"></a>contact</li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <!-- メインコンテンツ -->
         <main>
             <div class="fixedBackGroundImage"></div>
-            <div class="mv">あなたの思いを<a>彩</a>り、<br>そして未来に<a>結</a>びます</div>
-            <section id="about"></section>
-            <section id="service"></section>
-            <section id="works" href="works.html"></section>
-            <section id="contact"></section>
+            <div class="mv">
+                あなたの思いを<a>彩</a>り、<br>そして未来に<a>結</a>びます
+            </div>
+            <section id="about">
+                <div class="wrapper">
+                    <div class="card">
+                        <img src="./images/about.JPG">
+                    </div>
+                    <div class="text">
+                        <h2>谷本 小百合 / Sayuri Tanimoto</h2>
+                        <p>1998年京都府生まれ。2021年3月 同志社女子大学音楽学科卒業後、コールセンターにて半年間勤務後、家電量販店にて1年間携帯販売に従事。その後、自身のスキルアップを目指し、エンジニアとして働きながら2023年8月よりWebデザイナーの勉強を始めました。</p>
+                    </div>
+                </div>
+            </section>
+            <section id="service">
+                <ul class="container item-list">
+                    <li>
+                        <h3 number="01">デザイン</h3>
+                        <div class="inner">
+                            <i class="fa-solid fa-pencil"></i>
+                            <p>Figmaを使い、バナーなどのグラフィック制作を行います。丁寧にヒアリングした中でお客様の意図や想いをくみ取った上で課題解決に繋げることを意識したデザインを心掛けています。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 number="02">コーディング</h3>
+                        <div class="inner">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <p>HTML・CSSを使用し、お客様と形にしたものをパソコンだけでなく、タブレットやスマートフォンにも対応したレスポンシブなデザインを正確に再現いたします。また、jQueryなどを用いてサイトに動きを加えることも可能です。見た目だけでなく、お客様の使い勝手を考え、サイトのメンテナンス性や運用のしやすさにも配慮いたします。</p>
+                        </div>
+                    </li>
+                    <li>
+                        <h3 number="03">マーケティング</h3>
+                        <div class="inner">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            <p>お客様の想いを1人でも多くのユーザーに届けられるよう、物事や問題を多角的に捉え、解決に向けて比較・分析を行います。ユーザーのニーズを十分に理解した上で、そのニーズを満たすことのできる価値をお客様と一緒に創造していきます。</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section id="works" href="works.html">
+                <ul class="slider">
+                    <li><img src="images/design1.png" alt="design"></li>
+                    <li><img src="images/design2.png" alt="design"></li>
+                    <li><img src="images/design3.png" alt="design"></li>
+                    <li><img src="images/design4.png" alt="design"></li>
+                    <li><img src="images/design5.png" alt="design"></li>
+                    <li><img src="images/design6.png" alt="design"></li>
+                </ul>
+            </section>
+            <section id="contact">
+                <div class="">
+                    <p>気軽にこちらからお問い合わせください</p>
+                    <a href="mailto:tsl56.free@gmail.com" class="btn"><span>contact me </span></a>
+                </div>
+            </section>
         </main>
         <!-- フッター -->
         <footer>
         </footer>
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
